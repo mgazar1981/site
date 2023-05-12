@@ -57,7 +57,62 @@
             Margin-right: 350px;
             border-radius: 5px;
         }
+        .profile-button {
+            background-color: #5783db;
+            color: white;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .profile-button.google-scholar {
+            background-color: #4285F4;
+            color: #fff;
+            padding: 10px 10px;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border: none;
+            width: auto;
+            height: 40px;
+            background-image: url('https://cdn.pixabay.com/photo/2017/10/31/09/19/google-2900900_960_720.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .profile-button.twitter {
+            background-color: #1DA1F2;
+        }
+        .button.email {
+            color: #fff;
+            background-color: #1E88E5;
+            border: none;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-family: Arial, sans-serif;
+            height: 40px;
+            width: 150px;
+        }
     </style>
+    <script>
+        function sendEmail() {
+            document.getElementById("emailForm").submit();
+        }
+    </script>
+
 </head>
 <body>
     <header>
@@ -73,11 +128,15 @@
             </td>
             <td>
                 <h2>About</h2>
-                <p>I am a <b>Staff Research Scientist</b> at <b>Google DeepMind</b>. My research is focused on advancing the frontiers of AI and Machine Learning, particularly <b>reinforcement learning</b> and <b>self-supervised learning</b>. I have extensive knowledge and expertise in the field of AI, along with over 10 years of research and management experience in creating new AI technologies.</p>
+                <p>I am a <b>Staff Research Scientist</b> at <b>Google DeepMind</b>. My research is focused on advancing the frontiers of AI and Machine Learning, particularly <b>reinforcement learning</b> and <b>self-supervised learning</b>. I have extensive knowledge and expertise in the field of AI, along with over 10 years of research/management experience in creating AI technologies.</p>
+<button class="profile-button google-scholar" onclick="window.open('https://scholar.google.com/citations?user==AlTQrFcAAAAJ&hl=en', '_blank')"> Google Scholar</button>
+<button class="profile-button" onclick="window.open('https://www.linkedin.com/in/mohammad-gheshlaghi-azar-a00a0840/', '_blank')">LinkedIn</button>
+    <button class="profile-button twitter" onclick="window.open('https://twitter.com/Learnius', '_blank')">Twitter</button>
+        <button class="button email" type="button" onclick="window.open('https://mail.google.com/mail/u/0/#inbox?compose=new','_blank')">Send Email </button>
             </td>
         </tr>
     </table>
-
+   
     </section>
  <table>
     <tr>
