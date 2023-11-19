@@ -107,6 +107,12 @@
             height: 40px;
             width: 150px;
         }
+
+        .two-column-list {
+    column-count: 2;       /* Specifies the number of columns */
+    column-gap: 20px;      /* Sets the gap between the columns */
+    list-style-type: none; /* Optional: removes the default list styling */
+    padding: 0;            /* Optional: removes default padding */}
     </style>
     <script>
         function sendEmail() {
@@ -144,7 +150,7 @@
 
  <section >
         <h2>Skills</h2>
-        <ul>
+        <ul class="two-column-list">
             <li>Problem-solving proficiency</li>
             <li>Coding proficiency (Python, JAX and TF)</li>
             <li>People management experience</li>
@@ -156,7 +162,7 @@
   </section>
   <section>
         <h2>Work History</h2>
-        <ul>
+        <ul class="two-column-list">
             <li><b>DeepMind - Staff Research Scientist</b>
         <p>2016 - 2022 | London, UK</p>
         <p>2023 - present | Seattle, WA</p></li>
