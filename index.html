@@ -3,34 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07131f">
-  <meta name="description" content="Mohammad Gheshlaghi Azar is an AI researcher, builder, and entrepreneur working on learning systems and frontier AI.">
-  <meta property="og:title" content="Mohammad Gheshlaghi Azar | AI Researcher and Builder">
-  <meta property="og:description" content="Building the intelligence behind tomorrow’s economy.">
+  <meta name="theme-color" content="#fbfbf8">
+  <meta name="description" content="Mohammad Gheshlaghi Azar is an AI researcher working on reinforcement learning, self-supervised learning, world models and systems that learn from experience.">
+  <meta property="og:title" content="Mohammad Gheshlaghi Azar | AI Researcher">
+  <meta property="og:description" content="Research in reinforcement learning, self-supervised learning and systems that learn from experience.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mgazar1981.github.io/site/">
+  <meta property="og:url" content="https://mgazar1981.github.io/">
   <meta property="og:image" content="https://mgazar1981.github.io/site/og-card-v3.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mohammad Gheshlaghi Azar | AI Researcher and Builder">
-  <meta name="twitter:description" content="Building the intelligence behind tomorrow’s economy.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mohammad Gheshlaghi Azar | AI Researcher">
+  <meta name="twitter:description" content="Research in reinforcement learning, self-supervised learning and systems that learn from experience.">
   <meta name="twitter:image" content="https://mgazar1981.github.io/site/og-card-v3.jpg">
   <link rel="icon" type="image/jpeg" href="favicon-v2.jpg">
-  <title>Mohammad Gheshlaghi Azar | AI Researcher and Builder</title>
+  <title>Mohammad Gheshlaghi Azar | AI Researcher</title>
 
   <style>
     :root {
-      --ink: #07131f;
-      --ink-soft: #334155;
-      --paper: #f5f7f5;
+      --ink: #17211c;
+      --ink-soft: #4d5b54;
+      --muted: #718078;
+      --paper: #fbfbf8;
       --surface: #ffffff;
-      --line: rgba(7, 19, 31, 0.12);
-      --mint: #66e3c4;
-      --mint-deep: #087f6d;
-      --blue: #78aef8;
-      --radius-lg: 28px;
-      --radius-md: 18px;
-      --shadow: 0 20px 60px rgba(7, 19, 31, 0.10);
-      --content: 1120px;
+      --line: #d9ded9;
+      --accent: #285b46;
+      --accent-soft: #e5eee9;
+      --content: 980px;
     }
 
     * {
@@ -45,150 +42,30 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      font-size: 17px;
-      line-height: 1.65;
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
 
     a {
-      color: inherit;
+      color: var(--accent);
+      text-underline-offset: 4px;
+    }
+
+    a:hover {
+      color: var(--ink);
     }
 
     a:focus-visible {
-      outline: 3px solid var(--blue);
+      outline: 3px solid rgba(40, 91, 70, 0.22);
       outline-offset: 4px;
-      border-radius: 4px;
     }
 
     img {
       display: block;
       max-width: 100%;
-    }
-
-    .shell {
-      width: min(calc(100% - 40px), var(--content));
-      margin: 0 auto;
-    }
-
-    .site-header {
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      right: 0;
-      left: 0;
-      padding: 24px 0;
-      color: #fff;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      font-weight: 760;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-mark {
-      display: grid;
-      width: 42px;
-      height: 42px;
-      place-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--mint);
-      font-size: 13px;
-      letter-spacing: 0.08em;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 26px;
-      font-size: 14px;
-      font-weight: 650;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      opacity: 0.82;
-      transition: opacity 160ms ease;
-    }
-
-    .nav-links a:hover {
-      opacity: 1;
-    }
-
-    .nav-links .nav-cta {
-      padding: 10px 16px;
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      border-radius: 999px;
-      opacity: 1;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      min-height: 760px;
-      padding: 158px 0 90px;
-      background:
-        radial-gradient(circle at 12% 12%, rgba(102, 227, 196, 0.16), transparent 32%),
-        radial-gradient(circle at 92% 30%, rgba(120, 174, 248, 0.16), transparent 28%),
-        var(--ink);
-      color: #fff;
-    }
-
-    .hero::after {
-      position: absolute;
-      right: -180px;
-      bottom: -260px;
-      width: 650px;
-      height: 650px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 50%;
-      box-shadow:
-        0 0 0 80px rgba(255, 255, 255, 0.025),
-        0 0 0 160px rgba(255, 255, 255, 0.018);
-      content: "";
-      pointer-events: none;
-    }
-
-    .hero-grid {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
-      align-items: center;
-      gap: 80px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin: 0 0 24px;
-      color: var(--mint);
-      font-size: 13px;
-      font-weight: 780;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .eyebrow::before {
-      width: 30px;
-      height: 1px;
-      background: currentColor;
-      content: "";
     }
 
     h1,
@@ -198,440 +75,299 @@
       margin-top: 0;
     }
 
+    h1,
+    h2 {
+      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+    }
+
     h1 {
-      max-width: 760px;
-      margin-bottom: 26px;
-      font-family: "Avenir Next", Avenir, Inter, ui-sans-serif, system-ui, sans-serif;
-      font-size: clamp(2.65rem, 5vw, 5.1rem);
-      font-weight: 640;
-      letter-spacing: -0.045em;
-      line-height: 1.04;
+      margin-bottom: 4px;
+      font-size: clamp(2.3rem, 5vw, 3.7rem);
+      line-height: 1.08;
     }
 
-    .hero-lede {
-      max-width: 690px;
-      margin-bottom: 34px;
-      color: rgba(255, 255, 255, 0.72);
-      font-size: clamp(1.15rem, 2vw, 1.42rem);
-      line-height: 1.55;
+    h2 {
+      margin-bottom: 32px;
+      font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+      line-height: 1.16;
     }
 
-    .hero-actions {
+    h3 {
+      margin-bottom: 5px;
+      font-size: 1.04rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .shell {
+      width: min(calc(100% - 40px), var(--content));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: rgba(251, 251, 248, 0.96);
+    }
+
+    .nav {
+      min-height: 72px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .button {
-      display: inline-flex;
-      min-height: 48px;
       align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      font-size: 15px;
-      font-weight: 720;
-      text-decoration: none;
-      transition:
-        transform 160ms ease,
-        background 160ms ease,
-        border-color 160ms ease;
+      justify-content: space-between;
+      gap: 28px;
     }
 
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button-primary {
-      background: var(--mint);
+    .brand {
       color: var(--ink);
+      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      font-size: 1.03rem;
+      font-weight: 600;
+      text-decoration: none;
     }
 
-    .button-secondary {
-      border-color: rgba(255, 255, 255, 0.26);
-      background: rgba(255, 255, 255, 0.06);
-      color: #fff;
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 0.84rem;
+      font-weight: 600;
     }
 
-    .portrait-wrap {
-      position: relative;
-      width: min(100%, 390px);
-      justify-self: end;
+    .nav-links a {
+      color: var(--ink-soft);
+      text-decoration: none;
     }
 
-    .portrait-frame {
-      overflow: hidden;
-      aspect-ratio: 1;
-      border: 1px solid rgba(255, 255, 255, 0.20);
-      border-radius: 42% 42% 22% 22%;
-      background: #dce5eb;
-      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.32);
+    .nav-links a:hover {
+      color: var(--accent);
     }
 
-    .portrait-frame img {
-      width: 100%;
-      height: 100%;
+    .about {
+      padding: 78px 0 82px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      align-items: start;
+      gap: 64px;
+    }
+
+    .portrait {
+      margin: 0;
+    }
+
+    .portrait img {
+      width: 250px;
+      height: 308px;
       object-fit: cover;
+      object-position: center 24%;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: #eef1ee;
     }
 
-    main {
-      overflow: hidden;
-    }
-
-    .section {
-      padding: 110px 0;
-    }
-
-    .section-kicker {
-      margin-bottom: 15px;
-      color: var(--mint-deep);
-      font-size: 13px;
+    .section-label {
+      margin-bottom: 13px;
+      color: var(--accent);
+      font-size: 0.72rem;
       font-weight: 800;
       letter-spacing: 0.13em;
       text-transform: uppercase;
     }
 
-    .section-heading {
-      max-width: 780px;
-      margin-bottom: 26px;
-      font-size: clamp(2.25rem, 5vw, 4.3rem);
-      font-weight: 740;
-      letter-spacing: -0.052em;
-      line-height: 1.04;
+    .role {
+      margin-bottom: 29px;
+      color: var(--muted);
+      font-size: 1rem;
     }
 
-    .section-intro {
-      max-width: 720px;
+    .about-copy {
+      max-width: 660px;
+    }
+
+    .about-copy > p:not(.section-label):not(.role) {
+      margin-bottom: 17px;
       color: var(--ink-soft);
-      font-size: 1.18rem;
+      font-size: 1.03rem;
     }
 
-    .mission-grid {
-      display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 70px;
-    }
-
-    .mission-copy {
-      padding-top: 18px;
-    }
-
-    .mission-card {
-      position: relative;
-      overflow: hidden;
-      padding: clamp(28px, 5vw, 56px);
-      border-radius: var(--radius-lg);
-      background: var(--ink);
-      box-shadow: var(--shadow);
-      color: #fff;
-    }
-
-    .mission-card::after {
-      position: absolute;
-      top: -95px;
-      right: -75px;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(102, 227, 196, 0.22), transparent 68%);
-      content: "";
-      pointer-events: none;
-    }
-
-    .mission-card p {
-      position: relative;
-      z-index: 1;
-      color: rgba(255, 255, 255, 0.70);
-      font-size: 1.05rem;
-    }
-
-    .mission-card .mission-statement {
-      margin-bottom: 28px;
-      color: #fff;
-      font-size: clamp(1.55rem, 3vw, 2.3rem);
-      font-weight: 690;
-      letter-spacing: -0.035em;
-      line-height: 1.24;
-    }
-
-    .principles {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 56px;
-    }
-
-    .principle {
-      min-height: 220px;
-      padding: 26px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-md);
-      background: rgba(255, 255, 255, 0.72);
-    }
-
-    .principle-number {
-      display: inline-grid;
-      width: 34px;
-      height: 34px;
-      margin-bottom: 32px;
-      place-items: center;
-      border-radius: 50%;
-      background: rgba(102, 227, 196, 0.22);
-      color: var(--mint-deep);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .principle h3 {
-      margin-bottom: 10px;
-      font-size: 1.15rem;
-      letter-spacing: -0.02em;
-    }
-
-    .principle p {
-      margin-bottom: 0;
-      color: var(--ink-soft);
-      font-size: 0.96rem;
-    }
-
-    .research {
-      background: #e9eeeb;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: 0.75fr 1.25fr;
-      gap: 76px;
-    }
-
-    .belief {
-      position: sticky;
-      top: 28px;
-      align-self: start;
-      padding: 30px;
-      border-left: 4px solid var(--mint-deep);
-      background: rgba(255, 255, 255, 0.66);
+    .about-copy strong {
       color: var(--ink);
-      font-size: 1.26rem;
-      font-weight: 630;
-      letter-spacing: -0.025em;
-      line-height: 1.45;
-    }
-
-    .research-list {
-      display: grid;
-      gap: 16px;
-    }
-
-    .research-item {
-      display: grid;
-      grid-template-columns: 84px 1fr;
-      gap: 22px;
-      padding: 28px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .research-item:last-child {
-      border-bottom: 1px solid var(--line);
-    }
-
-    .research-year {
-      color: var(--mint-deep);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .research-item h3 {
-      margin-bottom: 8px;
-      font-size: 1.22rem;
-      letter-spacing: -0.025em;
-    }
-
-    .research-item p {
-      margin-bottom: 0;
-      color: var(--ink-soft);
-      font-size: 0.98rem;
-    }
-
-    .journey-grid {
-      display: grid;
-      grid-template-columns: 0.78fr 1.22fr;
-      gap: 76px;
-    }
-
-    .timeline {
-      border-top: 1px solid var(--line);
-    }
-
-    .timeline-item {
-      display: grid;
-      grid-template-columns: minmax(130px, 0.38fr) 1fr;
-      gap: 28px;
-      padding: 26px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .timeline-item time {
-      color: var(--ink-soft);
-      font-size: 14px;
       font-weight: 650;
     }
 
-    .timeline-item h3 {
-      margin-bottom: 4px;
-      font-size: 1.1rem;
+    .profile-links {
+      margin-top: 27px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      font-size: 0.9rem;
+      font-weight: 650;
     }
 
-    .timeline-item p {
+    .profile-links a {
+      text-decoration-thickness: 1px;
+    }
+
+    .section {
+      padding: 74px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 40px;
+    }
+
+    .section-title {
+      margin-bottom: 0;
+    }
+
+    .history,
+    .research-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .history-item,
+    .research-item {
+      display: grid;
+      grid-template-columns: 145px minmax(0, 1fr);
+      gap: 28px;
+      padding: 25px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .history-item time,
+    .research-area {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .history-item p,
+    .research-item p {
       margin-bottom: 0;
       color: var(--ink-soft);
-      font-size: 0.95rem;
+      font-size: 0.93rem;
     }
 
-    .footer {
-      padding: 26px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.10);
-      background: var(--ink);
-      color: rgba(255, 255, 255, 0.55);
-      font-size: 13px;
+    .institution {
+      color: var(--accent);
+      font-weight: 650;
     }
 
-    .footer-row {
+    .research-intro {
+      margin-bottom: 27px;
+      color: var(--ink-soft);
+      font-size: 1rem;
+    }
+
+    .research-intro strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .research-names {
+      margin-top: 8px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 650;
+    }
+
+    .education-note {
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: 0.87rem;
+    }
+
+    .site-footer {
+      padding: 25px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.78rem;
       text-align: center;
     }
 
-    @media (max-width: 900px) {
-      .hero {
-        min-height: auto;
+    @media (max-width: 760px) {
+      .about {
+        padding-top: 52px;
       }
 
-      .hero-grid,
-      .mission-grid,
-      .research-grid,
-      .journey-grid {
+      .about-grid,
+      .section-head {
         grid-template-columns: 1fr;
       }
 
-      .hero-grid {
-        gap: 42px;
+      .about-grid {
+        gap: 34px;
       }
 
-      .portrait-wrap {
-        order: -1;
-        width: min(54vw, 330px);
-        justify-self: center;
+      .portrait img {
+        width: min(58vw, 240px);
+        height: auto;
+        aspect-ratio: 4 / 5;
       }
 
-      .mission-grid,
-      .research-grid,
-      .journey-grid {
-        gap: 44px;
+      .section-head {
+        gap: 25px;
       }
-
-      .belief {
-        position: static;
-      }
-
-      .principles {
-        grid-template-columns: 1fr 1fr;
-      }
-
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 560px) {
       body {
-        font-size: 16px;
+        font-size: 15px;
       }
 
       .shell {
         width: min(calc(100% - 28px), var(--content));
       }
 
-      .site-header {
-        padding: 16px 0;
-      }
-
-      .brand-name,
-      .nav-links a:not(.nav-cta) {
-        display: none;
+      .nav {
+        min-height: 66px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 9px;
+        padding: 14px 0;
       }
 
       .nav-links {
-        margin-left: auto;
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
       }
 
-      .nav-links .nav-cta {
-        padding: 9px 14px;
-      }
-
-      .hero {
-        padding: 108px 0 74px;
+      .about {
+        padding: 45px 0 58px;
       }
 
       h1 {
-        font-size: clamp(2.45rem, 11vw, 3.45rem);
-        letter-spacing: -0.04em;
-        line-height: 1.06;
+        font-size: 2.25rem;
       }
 
-      .hero-lede {
-        font-size: 1.08rem;
-      }
-
-      .hero-actions {
-        display: grid;
-      }
-
-      .button {
-        width: 100%;
-      }
-
-      .portrait-wrap {
-        width: min(64vw, 260px);
+      .profile-links {
+        gap: 8px 18px;
       }
 
       .section {
-        padding: 78px 0;
+        padding: 56px 0;
       }
 
-      .section-heading {
-        font-size: clamp(2.15rem, 12vw, 3.2rem);
-      }
-
-      .principles {
+      .history-item,
+      .research-item {
         grid-template-columns: 1fr;
-        margin-top: 38px;
+        gap: 6px;
       }
-
-      .principle {
-        min-height: auto;
-      }
-
-      .principle-number {
-        margin-bottom: 20px;
-      }
-
-      .research-item,
-      .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 7px;
-      }
-
     }
 
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
-      }
-
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -640,211 +376,146 @@
 <body>
   <header class="site-header">
     <div class="shell nav">
-      <a class="brand" href="#top" aria-label="Mohammad Gheshlaghi Azar, home">
-        <span class="brand-mark" aria-hidden="true">MGA</span>
-        <span class="brand-name">Mohammad Gheshlaghi Azar</span>
-      </a>
-
+      <a class="brand" href="#about">Mohammad Gheshlaghi Azar</a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#vision">Vision</a>
+        <a href="#about">About</a>
+        <a href="#work">Work History</a>
         <a href="#research">Research</a>
-        <a href="#journey">Journey</a>
-        <a class="nav-cta" href="mailto:gheshgheregh@gmail.com">Get in touch</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="shell hero-grid">
+  <main>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <figure class="portrait">
+          <img src="profile-research-scientist-v2.svg" alt="Mohammad Gheshlaghi Azar in an AI research office" width="1254" height="1254">
+        </figure>
+
+        <div class="about-copy">
+          <p class="section-label">About</p>
+          <h1 id="about-title">Mohammad Gheshlaghi Azar</h1>
+          <p class="role">AI researcher</p>
+
+          <p><strong>My research is focused on building AI systems that learn from experience, particularly reinforcement learning and self-supervised learning.</strong> I study how agents can form useful representations of the world, explore intelligently, and improve through interaction rather than relying on every answer being supplied by people.</p>
+
+          <p>After spending most of my career on these questions at Google DeepMind and Cohere, I am now bringing this research to the financial markets.</p>
+
+          <p>My team and I are building frontier AI that learns how companies and industries may evolve as technology, consumer behavior, and the wider economy change.</p>
+
+          <p>We want to use this technology to identify important risks and opportunities earlier, direct capital toward consequential technologies, and help promising companies realize their potential.</p>
+
+          <div class="profile-links" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=AlTQrFcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/mohammad-azar-a00a0840/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://x.com/Learnius" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="mailto:gheshgheregh@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="shell section-head">
         <div>
-          <h1 id="hero-heading">Building the intelligence behind tomorrow’s economy.</h1>
-          <p class="hero-lede">
-            For nearly two decades, I have built AI systems that learn from experience.
-            Today, I am applying that work to recognize overlooked
-            potential, improve how capital is allocated, and support the companies
-            building our future.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#vision">Explore my work</a>
-            <a class="button button-secondary" href="https://scholar.google.com/citations?hl=en&amp;user=AlTQrFcAAAAJ" target="_blank" rel="noopener noreferrer">
-              Google Scholar
-            </a>
-          </div>
+          <p class="section-label">Experience</p>
+          <h2 class="section-title" id="work-title">Work History</h2>
         </div>
 
-        <div class="portrait-wrap">
-          <div class="portrait-frame">
-            <img src="profile-headshot-v3.jpg" alt="Portrait of Mohammad Gheshlaghi Azar" width="1254" height="1254">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="vision" aria-labelledby="vision-heading">
-      <div class="shell">
-        <div class="mission-grid">
-          <div class="mission-copy">
-            <p class="section-kicker">What I am building</p>
-            <h2 class="section-heading" id="vision-heading">AI for a more intelligent financial future.</h2>
-            <p class="section-intro">
-              Markets reflect an overwhelming stream of technological, economic,
-              and human signals. Even sophisticated investors can process only a
-              fraction of them.
-            </p>
-          </div>
-
-          <div class="mission-card">
-            <p class="mission-statement">
-              We are building frontier AI that reasons across this complexity to
-              understand how companies and industries could evolve.
-            </p>
-            <p>
-              The ambition goes beyond prediction. We want to uncover consequential
-              risks and opportunities earlier, help capital reach promising ideas,
-              and eventually make sophisticated financial intelligence accessible
-              far beyond a small number of institutions.
-            </p>
-            <p>
-              The goal is not simply to invest in the future. It is to help create it.
-            </p>
-          </div>
-        </div>
-
-        <div class="principles" aria-label="Company principles">
-          <article class="principle">
-            <span class="principle-number" aria-hidden="true">01</span>
-            <h3>See change earlier</h3>
-            <p>Recognize meaningful shifts across technology, companies, and the wider economy before they become obvious.</p>
-          </article>
-          <article class="principle">
-            <span class="principle-number" aria-hidden="true">02</span>
-            <h3>Fund what builds the future</h3>
-            <p>Help capital reach the technologies and industries capable of producing lasting economic and social value.</p>
-          </article>
-          <article class="principle">
-            <span class="principle-number" aria-hidden="true">03</span>
-            <h3>Broaden access</h3>
-            <p>Make powerful financial intelligence useful to many more people, not only the largest institutions.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section research" id="research" aria-labelledby="research-heading">
-      <div class="shell research-grid">
         <div>
-          <p class="section-kicker">Research foundation</p>
-          <h2 class="section-heading" id="research-heading">Learning through experience.</h2>
-          <p class="belief">
-            AI should not need to be handed every answer. It should learn by
-            observing, acting, questioning, and improving, much as people do.
-          </p>
-        </div>
+          <div class="history">
+            <article class="history-item">
+              <time>Today</time>
+              <div>
+                <h3>Co-founder, <span class="institution">ViserAI</span></h3>
+                <p>Applying learning systems and frontier AI to understand how companies and industries may evolve.</p>
+              </div>
+            </article>
 
-        <div class="research-list">
-          <article class="research-item">
-            <span class="research-year">DeepMind</span>
-            <div>
-              <h3>Self-supervised learning</h3>
-              <p>
-                Pioneered BYOL and related methods that helped AI learn useful
-                representations without relying on human-provided labels.
-              </p>
-            </div>
-          </article>
-          <article class="research-item">
-            <span class="research-year">DeepMind</span>
-            <div>
-              <h3>World models and representation learning</h3>
-              <p>
-                Advanced PBL and World Discovery Models, systems that build an
-                internal understanding of their environment through observation
-                and interaction.
-              </p>
-            </div>
-          </article>
-          <article class="research-item">
-            <span class="research-year">DeepMind</span>
-            <div>
-              <h3>Exploration and decision-making</h3>
-              <p>
-                Contributed to foundational work including Noisy Networks,
-                BYOL-Explore, Neural Belief Representations, and Minimax RL.
-              </p>
-            </div>
-          </article>
-          <article class="research-item">
-            <span class="research-year">Cohere</span>
-            <div>
-              <h3>Self-improving language models</h3>
-              <p>
-                Worked on SRPO, enabling frontier models to revisit their first
-                answer, challenge their reasoning, and improve through refinement.
-              </p>
-            </div>
-          </article>
+            <article class="history-item">
+              <time>Before founding</time>
+              <div>
+                <h3>Technical Lead, <span class="institution">Cohere</span></h3>
+                <p>Worked on frontier language models and methods that enable models to question, revisit, and improve their own answers.</p>
+              </div>
+            </article>
+
+            <article class="history-item">
+              <time>2016 to 2023</time>
+              <div>
+                <h3>Staff Research Scientist, <span class="institution">Google DeepMind</span></h3>
+                <p>Led and contributed to research in self-supervised learning, reinforcement learning, world models, and exploration.</p>
+              </div>
+            </article>
+
+            <article class="history-item">
+              <time>2012 to 2016</time>
+              <div>
+                <h3>Postdoctoral Researcher, <span class="institution">Carnegie Mellon and Northwestern</span></h3>
+                <p>Published research spanning machine learning, control, computational neuroscience, and neural data analysis.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="education-note">PhD in Natural Sciences and Biophysics, Radboud University Nijmegen. MSc in Control Engineering, University of Tehran.</p>
         </div>
       </div>
     </section>
 
-    <section class="section" id="journey" aria-labelledby="journey-heading">
-      <div class="shell journey-grid">
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="shell section-head">
         <div>
-          <p class="section-kicker">Journey</p>
-          <h2 class="section-heading" id="journey-heading">Research to real-world impact.</h2>
-          <p class="section-intro">
-            Nearly two decades across reinforcement learning, self-supervised
-            learning, world models, and frontier language models.
-          </p>
+          <p class="section-label">Selected work</p>
+          <h2 class="section-title" id="research-title">Research</h2>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-item">
-            <time>Today</time>
-            <div>
-              <h3>Co-founder · Stealth AI company</h3>
-              <p>Building frontier AI for intelligent financial decision-making and long-term economic progress.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>Before founding</time>
-            <div>
-              <h3>Researcher · Cohere</h3>
-              <p>Advanced frontier language models and methods for iterative reasoning and self-improvement.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>2016 to 2023</time>
-            <div>
-              <h3>Staff Research Scientist · Google DeepMind</h3>
-              <p>Led and contributed to influential work across self-supervised learning, exploration, and world models.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>2012 to 2016</time>
-            <div>
-              <h3>Postdoctoral Researcher · Carnegie Mellon and Northwestern</h3>
-              <p>Published research spanning machine learning, control, and computational neuroscience.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <time>Education</time>
-            <div>
-              <h3>PhD · Natural Sciences / Biophysics</h3>
-              <p>Radboud University Nijmegen, following graduate study in control engineering and electrical engineering.</p>
-            </div>
-          </article>
+        <div>
+          <p class="research-intro"><strong>A central question connects this work:</strong> how can an intelligent system build an understanding of its world and improve through experience?</p>
+
+          <div class="research-list">
+            <article class="research-item">
+              <span class="research-area">Representations</span>
+              <div>
+                <h3>Self-supervised learning</h3>
+                <p>Developed methods that learn useful representations without requiring human-provided labels for every example.</p>
+                <p class="research-names">BYOL, PBL</p>
+              </div>
+            </article>
+
+            <article class="research-item">
+              <span class="research-area">World models</span>
+              <div>
+                <h3>Learning through prediction and interaction</h3>
+                <p>Studied how agents can build internal models by predicting their environment and the consequences of their actions.</p>
+                <p class="research-names">PBL, World Discovery Models, Neural Belief Representations</p>
+              </div>
+            </article>
+
+            <article class="research-item">
+              <span class="research-area">Exploration</span>
+              <div>
+                <h3>Seeking useful information</h3>
+                <p>Developed approaches that help agents balance what they know with what they need to investigate.</p>
+                <p class="research-names">Noisy Networks, BYOL-Explore, Minimax RL</p>
+              </div>
+            </article>
+
+            <article class="research-item">
+              <span class="research-area">Language models</span>
+              <div>
+                <h3>Iterative self-improvement</h3>
+                <p>Worked on methods that teach frontier models not to settle for their first answer, but to challenge and refine it.</p>
+                <p class="research-names">SRPO</p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="shell footer-row">
-      <span>© 2026 Mohammad Gheshlaghi Azar</span>
-    </div>
+  <footer class="site-footer">
+    <div class="shell">© 2026 Mohammad Gheshlaghi Azar</div>
   </footer>
 </body>
 </html>
