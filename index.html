@@ -77,7 +77,6 @@
 
     h1,
     h2 {
-      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
       font-weight: 500;
       letter-spacing: -0.025em;
     }
@@ -121,7 +120,6 @@
 
     .brand {
       color: var(--ink);
-      font-family: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
       font-size: 1.03rem;
       font-weight: 600;
       text-decoration: none;
@@ -178,17 +176,11 @@
       text-transform: uppercase;
     }
 
-    .role {
-      margin-bottom: 29px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
     .about-copy {
       max-width: 660px;
     }
 
-    .about-copy > p:not(.section-label):not(.role) {
+    .about-copy > p:not(.section-label) {
       margin-bottom: 17px;
       color: var(--ink-soft);
       font-size: 1.03rem;
@@ -379,7 +371,7 @@
       <a class="brand" href="#about">Mohammad Gheshlaghi Azar</a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#work">Work History</a>
+        <a href="#work">Experience</a>
         <a href="#research">Research</a>
       </nav>
     </div>
@@ -393,9 +385,7 @@
         </figure>
 
         <div class="about-copy">
-          <p class="section-label">About</p>
-          <h1 id="about-title">Mohammad Gheshlaghi Azar</h1>
-          <p class="role">AI researcher</p>
+          <h1 class="section-label" id="about-title">About</h1>
 
           <p><strong>My research is focused on building AI systems that learn from experience on their own, particularly reinforcement learning and self-supervised learning.</strong> I study how agents can form useful representations of the world, explore intelligently, and improve through interaction rather than relying on answers being supplied by humans.</p>
 
@@ -416,8 +406,7 @@
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="shell section-head">
         <div>
-          <p class="section-label">Experience</p>
-          <h2 class="section-title" id="work-title">Work History</h2>
+          <h2 class="section-title" id="work-title">Experience</h2>
         </div>
 
         <div>
@@ -463,7 +452,6 @@
     <section class="section" id="research" aria-labelledby="research-title">
       <div class="shell section-head">
         <div>
-          <p class="section-label">Selected work</p>
           <h2 class="section-title" id="research-title">Research</h2>
         </div>
 
@@ -472,20 +460,11 @@
 
           <div class="research-list">
             <article class="research-item">
-              <span class="research-area">Representations</span>
+              <span class="research-area">World representation</span>
               <div>
-                <h3>Self-supervised learning</h3>
-                <p>Developed methods that learn useful representations without requiring human-provided labels for every example.</p>
-                <p class="research-names">BYOL, PBL</p>
-              </div>
-            </article>
-
-            <article class="research-item">
-              <span class="research-area">World models</span>
-              <div>
-                <h3>Learning through prediction and interaction</h3>
-                <p>Studied how agents can build internal models by predicting their environment and the consequences of their actions.</p>
-                <p class="research-names">PBL, World Discovery Models, Neural Belief Representations</p>
+                <h3>Learning representations through prediction and interaction</h3>
+                <p>Developed methods that learn useful representations without human-provided labels and help agents build internal models by predicting their environment and the consequences of their actions.</p>
+                <p class="research-names">BYOL, PBL, World Discovery Models, Neural Belief Representations</p>
               </div>
             </article>
 
@@ -503,7 +482,7 @@
               <div>
                 <h3>Iterative self-improvement</h3>
                 <p>Worked on methods that teach frontier models not to settle for their first answer, but to challenge and refine it.</p>
-                <p class="research-names">SRPO</p>
+                <p class="research-names">SRPO, Online Preference Optimization (IPO)</p>
               </div>
             </article>
           </div>
